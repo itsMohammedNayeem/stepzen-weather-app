@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#792d81] to-[#241f62] p-10 flex flex-col justify-center items-center">
       <Card className="max-w-2xl mx-auto">
-        <Text className="text-6xl font-bold text-center mb-10 text-gray-700">
+        <Text className="text-6xl font-bold text-center mb-10 text-white">
           Weather AI
         </Text>
         <Subtitle className="text-xl text-center text-cyan-700">
