@@ -2,9 +2,9 @@
 
 import { Card, AreaChart, Title } from "@tremor/react";
 
-type Props = {
+type Props = Readonly<{
   results: Root;
-};
+}>;
 
 function HumidityChart({ results }: Props) {
   const hourly = results?.hourly.time

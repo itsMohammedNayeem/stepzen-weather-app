@@ -3,10 +3,10 @@
 import { CheckCircleIcon, ExclamationIcon } from "@heroicons/react/solid";
 import { Callout } from "@tremor/react";
 
-type Props = {
+type Props = Readonly<{
   message: string;
   warning?: boolean;
-};
+}>;
 
 function CalloutCard({ message, warning }: Props) {
   return (

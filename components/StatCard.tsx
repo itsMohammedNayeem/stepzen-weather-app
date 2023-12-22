@@ -2,11 +2,11 @@
 
 import { Card, Metric, Text, Color } from "@tremor/react";
 
-type Props = {
+type Props = Readonly<{
   title: string;
   metric: string;
   color?: Color;
-};
+}>;
 
 function StatCard({ title, metric, color }: Props) {
   return (
