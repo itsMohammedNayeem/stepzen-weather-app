@@ -33,8 +33,6 @@ async function WeatherPage({ params: { city, lat, long } }: Props) {
   });
 
   const results: Root = data.myQuery;
-  console.log("🚀 ~ file: page.tsx:36 ~ WeatherPage ~ results:", results);
-
   const dataToSend = cleanData(results, city);
 
   const res = await fetch(`${getBasePath()}/api/getWeatherSummary`, {
