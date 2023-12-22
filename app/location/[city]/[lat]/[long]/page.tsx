@@ -11,13 +11,13 @@ import getBasePath from "@/lib/getBasePath";
 
 export const revalidate = 43200;
 
-type Props = {
+type Props = Readonly<{
   params: {
     city: string;
     lat: string;
     long: string;
   };
-};
+}>;
 
 async function WeatherPage({ params: { city, lat, long } }: Props) {
   const client = getClient();

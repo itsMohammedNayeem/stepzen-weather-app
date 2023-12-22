@@ -3,12 +3,12 @@ import Image from "next/image";
 import CityPicker from "./CityPicker";
 import weatherCodeToString from "@/lib/weatherCodeToString";
 
-type Props = {
+type Props = Readonly<{
   city: string;
   results: Root;
   lat: string;
   long: string;
-};
+}>;
 
 function InformationPanel({ city, lat, long, results }: Props) {
   return (
